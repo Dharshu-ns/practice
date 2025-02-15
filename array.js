@@ -10,4 +10,9 @@ function reversedArray(arr){
     return reversed;
 }
 
-console.log(reversedArray([1,2,3,4,5,6]));
+// console.log(reversedArray([1,2,3,4,5,6]));
+
+//usomg redice
+let array = [1,2,3,4,5,6,7];
+let reversedArray2 = array.reduce((acc, val) => [val, ...acc],[]);
+console.log(reversedArray2);
