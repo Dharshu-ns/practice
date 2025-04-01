@@ -15,4 +15,9 @@ function reversedArray(arr){
 //usomg redice
 let array = [1,2,3,4,5,6,7];
 let reversedArray2 = array.reduce((acc, val) => [val, ...acc],[]);
-console.log(reversedArray2);
+// console.log(reversedArray2);
+
+//using Map
+const array2 = [1,2,3,4];
+const arrayReversed = array2.map((_,i,a)=> a[a.length-1 - i]);
+console.log(arrayReversed);
